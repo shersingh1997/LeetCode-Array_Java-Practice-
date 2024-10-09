@@ -1,0 +1,32 @@
+package Java_Practice;
+
+
+
+public class Two_Sum {
+	
+	public static void main(String[] Args)
+	{
+		int[] arr= {2,7,11,15};
+		int target=9;
+		
+	  Two_Number_Sum(arr,target);
+	}
+
+	private static void Two_Number_Sum(int[] arr,int target) {
+		
+		int n=arr.length;
+		for (int i=0;i<n;i++)
+		{
+			for(int j=i+1;j<n;j++)
+			{
+				if(arr[i]+arr[j]==target) {
+					System.out.println("first Number :"+ i+" second number :"+ j);
+					return ;
+				}
+				
+			}
+		}
+		
+	}
+
+}
